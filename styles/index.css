@@ -1,0 +1,277 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Jacquard 24', sans-serif;
+}
+
+header {
+  position:absolute   ;
+  width: 100%;
+  height: 100vh; /* Make header fill the viewport height */
+  overflow: hidden;
+}
+
+.navbar {
+  position: absolute; /* Absolute within header */
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: white;
+  padding: 10px 0;
+  z-index: 100; /* Ensures the navbar is on top of other content in header */
+  list-style-type: none;
+
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; /* Aligns items to the start */
+  align-items: center; /* Centers items vertically */
+
+}
+
+.navbar li {
+  margin: 0 15px;
+
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+#titulo {
+  margin-left: auto; /* Pushes this item to the right */
+  font-size: 30px;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Places the video behind other content in header */
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire background */
+}
+
+.MainHeader {
+  position: relative;
+  z-index: 1; /* Ensures the main header appears above the video but below the navbar */
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+#tst .tl {
+  font-family: 'Nabla', cursive;
+  font-size: 2em;
+  margin: 0;
+  padding: 10px 0;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+.white-bg {
+  background-color: white;
+  padding: 20px;
+  color: black;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#signinpic{
+  width: 100%;
+  height: 60px;
+}
+#cabeza{
+display: flex;
+/* border: gold 2px solid;   */
+background: url(../Images/particlephysics.png);
+width: 100%;
+height: 20%;
+
+}
+.wholeheader{
+  
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+.mybody{
+  display: flex;
+  height: 80%;
+  border: gray 2px solid;
+  justify-content: center;
+}
+.thecontainer{
+  width: 50%;
+  display:block;
+  /* background-color: aqua; */
+  color: black;
+  margin-bottom: auto;
+}
+#fg{
+  display: flex;
+  justify-content: end;
+  color: black;
+}
+.signinside{
+  width: 50%;
+  background-color: #28a745;
+  
+}
+#n{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display:flex;  
+}
+.btn {
+    display: flex;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn:hover {
+  opacity: 0.8;
+  background-color: aqua;
+}
+#lol{
+  font-family:'Jacquard 24', sans-serif; 
+  font-size: 6vh;
+  list-style-type: none;
+  justify-content: end;
+}
+.part1{
+  display:flex;
+  /* background-color: pink; */
+  width: 60%;
+
+}
+#part2{
+  /* display: flex; */
+  /* background-color:burlywood; */
+  width: 50%;
+  margin-left: auto;
+  justify-content: center;
+}
+#grande{
+  display:flex;
+}
+.hojas{
+  display: flex;
+  height: 50px;
+  /* background-color:black; */
+  color:black;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+#rights{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#rightss
+{
+font-family: 'Times New Roman', Times, serif;
+font-size: 16px;
+
+}
+#video{
+  display: flex;
+}
+#borde{
+  border: 2px solid gold;
+}
+.moo-lah-lah-regular {
+  font-family: "Moo Lah Lah", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.zilla-slab-highlight-regular {
+  font-family: "Zilla Slab Highlight", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zilla-slab-highlight-bold {
+  font-family: "Zilla Slab Highlight", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+#moonletters{
+  font-family: "Moo Lah Lah", sans-serif;
+}
+#ti{
+  font-family: "Zilla Slab Highlight", serif; ;
+  font-size: 25px;
+}
